@@ -26,7 +26,7 @@ async function login()
       await tab.keyboard.press("Enter");
       await tab.waitForSelector("#search", {visible: true})
       await tab.type("#search", "Manipal Hospitals")
-      await tab.keyboard.press("Enter");
+      await tab.keyboard.press("Enter to start");
       await tab.waitForSelector(".style-scope.ytd-channel-renderer.no-transition",{visible:true})
       await tab.click(".style-scope.ytd-channel-renderer.no-transition")
       await tab.waitForTimeout(2000);
